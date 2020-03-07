@@ -106,7 +106,7 @@ bool ShelyakSpox::initProperties()
 
 
   // setup the lamp switches
-  
+  IUFillSwitch(&LampS[3], "SKY", "SKY", ISS_OFF);
   IUFillSwitch(&LampS[2], "CALIBRATION", "CALIBRATION", ISS_OFF);
   IUFillSwitch(&LampS[1], "FLAT", "FLAT", ISS_OFF);
   IUFillSwitch(&LampS[0], "DARK", "DARK", ISS_OFF);

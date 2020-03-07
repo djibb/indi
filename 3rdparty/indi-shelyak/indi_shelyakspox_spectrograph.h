@@ -39,7 +39,7 @@ std::map<ISState, char> COMMANDS = {
   {ISS_ON, 0x31}, {ISS_OFF, 0x30}    //"1" and "0"
 };
 std::map<std::string, char> PARAMETERS = {
-  {"CALIBRATION", 0x31}, {"FLAT", 0x32}, {"DARK", 0x33} //"1", "2", "3"
+  {"SKY", 0x30}, {"CALIBRATION", 0x31}, {"FLAT", 0x32}, {"DARK", 0x33} //"0","1", "2", "3"
 };
 
 class ShelyakSpox : public INDI::DefaultDevice
