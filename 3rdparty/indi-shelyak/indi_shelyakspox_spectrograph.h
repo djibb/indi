@@ -66,7 +66,7 @@ private:
 
   // Main Control
   ISwitchVectorProperty LampSP;
-  ISwitch LampS[3];
+  ISwitch LampS[4];
 
   // Options
   ITextVectorProperty PortTP;
@@ -75,13 +75,9 @@ private:
   // Spectrograph Settings
   INumberVectorProperty SettingsNP;
   INumber SettingsN[2];
-
-  const char* lastLampOn;
-  
   
   bool calibrationUnitCommand(char command, char parameter);
   bool resetLamps();
-  //bool pollingLamps();
 };
 
 #endif // SHELYAKSPOX_SPECTROGRAPH_H
